@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="site-base" content="./" />
+  <title>보기 - 개인 아카이브</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body data-page="view">
+  <header class="site-header">
+    <div class="shell">
+      <div class="row between">
+        <div><a class="link" href="./"><strong>개인 아카이브</strong></a></div>
+        <div class="muted">상세 보기</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="home-link-wrap">
+    <a class="btn-home" href="./">← 홈</a>
+  </div>
+
+  <main class="container">
+    <div id="detail"></div>
+  </main>
+
+  <!-- 이미지 확대 모달 -->
+  <div class="img-modal" id="imgModal" aria-hidden="true">
+    <div class="img-modal-backdrop"></div>
+    <div class="img-modal-stage">
+      <img class="img-modal-content" src="" alt="" />
+    </div>
+    <button class="img-modal-close" type="button" aria-label="close">×</button>
+    <div class="img-modal-hint">휠로 확대 · 드래그로 이동 · ESC 닫기</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

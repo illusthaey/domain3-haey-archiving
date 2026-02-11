@@ -1,0 +1,23 @@
+{
+  "section": "create.memo",
+  "title": "창작 메모(A7)",
+  "short": "메모",
+  "listPage": "create/memo/",
+  "updated": "2026-02-05",
+  "entries": [
+    {
+      "id": "2026-02-01-a7-memo-01",
+      "type": "create.memo.card",
+      "title": "A7 메모 백업(샘플)",
+      "date": "2026-02-01",
+      "tags": [
+        "memo",
+        "a7",
+        "idea"
+      ],
+      "visibility": "private",
+      "summary": "그날그날 메모는 이미지로만 백업해도 80점.",
+      "src": "data/create/memo/items/2026-02-01-a7-memo-01.json"
+    }
+  ]
+}

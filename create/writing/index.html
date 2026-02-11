@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="site-base" content="../../" />
+  <title>글</title>
+  <link rel="stylesheet" href="../../assets/style.css" />
+</head>
+
+<body data-page="list" data-index="data/create/writing/index.json">
+  <header class="site-header">
+    <div class="shell">
+      <div class="row between">
+        <div><a class="link" href="../../"><strong>개인 아카이브</strong></a></div>
+        <div class="muted">글</div>
+      </div>
+    </div>
+  </header>
+
+  <div class="home-link-wrap">
+    <a class="btn-home" href="../../">← 홈</a>
+  </div>
+
+  <main class="container">
+    <h1>글</h1>
+    <p class="subtitle">에세이 · 수필</p>
+
+    <details class="shot-details">
+      <summary class="shot-summary">검색</summary>
+      <div class="row" style="margin-top:10px;">
+        <input id="q" type="text" placeholder="제목/요약/태그로 검색" />
+        <span class="muted">(<span id="count"></span>)</span>
+      </div>
+    </details>
+
+    <section class="section">
+      <div id="list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p class="muted">데이터: data/create/writing/index.json</p>
+    </div>
+  </footer>
+
+  <script src="../../assets/app.js"></script>
+</body>
+</html>

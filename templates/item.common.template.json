@@ -1,0 +1,31 @@
+{
+  "_comment": "모든 상세 아이템이 공유하는 최소 필드",
+  "id": "YYYY-MM-DD-some-id",
+  "type": "devlog.log",
+  "title": "제목",
+  "date": "YYYY-MM-DD",
+  "tags": [],
+  "visibility": "private",
+  "summary": "목록에 보일 짧은 요약(선택)",
+  "bodyMd": "## 본문\nMarkdown으로 작성\n",
+  "bodyHtml": "",
+  "links": [
+    {
+      "title": "참고",
+      "url": "https://example.com"
+    }
+  ],
+  "images": [
+    {
+      "src": "assets/media/xxx.svg",
+      "alt": "설명",
+      "caption": "캡션(선택)"
+    }
+  ],
+  "related": [
+    {
+      "label": "연결된 항목",
+      "src": "data/....json"
+    }
+  ]
+}

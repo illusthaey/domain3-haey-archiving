@@ -1,0 +1,22 @@
+{
+  "section": "review",
+  "title": "컨텐츠 감상",
+  "short": "감상",
+  "listPage": "review/",
+  "updated": "2026-02-05",
+  "entries": [
+    {
+      "id": "2026-01-31-sample-review",
+      "type": "review.book",
+      "title": "샘플 감상: 어떤 책을 읽고",
+      "date": "2026-01-31",
+      "tags": [
+        "review",
+        "book"
+      ],
+      "visibility": "private",
+      "summary": "감상은 '재미 포인트'를 구조화해두면 나중에 내 취향 분석이 된다.",
+      "src": "data/review/items/2026-01-31-sample-review.json"
+    }
+  ]
+}

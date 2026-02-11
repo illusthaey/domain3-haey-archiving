@@ -1,0 +1,20 @@
+{
+  "id": "YYYY-MM-DD-memo-001",
+  "type": "create.memo.card",
+  "title": "A7 메모",
+  "date": "YYYY-MM-DD",
+  "tags": [
+    "memo",
+    "a7"
+  ],
+  "visibility": "private",
+  "summary": "한 줄(선택)",
+  "images": [
+    {
+      "src": "assets/memos/2026/02/05/2026-02-05_memo_001.jpg",
+      "alt": "메모 스캔"
+    }
+  ],
+  "related": [],
+  "bodyMd": "## 메모(선택)\n- ...\n"
+}

@@ -1,0 +1,22 @@
+{
+  "section": "create.illustration",
+  "title": "일러스트",
+  "short": "일러",
+  "listPage": "create/illustration/",
+  "updated": "2026-02-05",
+  "entries": [
+    {
+      "id": "2026-02-03-sample-portrait",
+      "type": "create.illustration.portrait",
+      "title": "샘플 초상화(placeholder)",
+      "date": "2026-02-03",
+      "tags": [
+        "illustration",
+        "portrait"
+      ],
+      "visibility": "private",
+      "summary": "일러스트 1장 = 1레코드. 이미지 클릭하면 확대 모달.",
+      "src": "data/create/illustration/items/2026-02-03-sample-portrait.json"
+    }
+  ]
+}

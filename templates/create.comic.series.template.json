@@ -1,0 +1,13 @@
+{
+  "id": "series-id",
+  "type": "create.comic.series",
+  "title": "시리즈/작품명",
+  "date": "YYYY-MM-DD",
+  "tags": [
+    "comic"
+  ],
+  "visibility": "private",
+  "summary": "시리즈 소개 한 줄",
+  "cover": "assets/comic/series/cover.jpg",
+  "bodyMd": "## 소개\n- ...\n"
+}

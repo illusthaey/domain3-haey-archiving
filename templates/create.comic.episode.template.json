@@ -1,0 +1,26 @@
+{
+  "id": "YYYY-MM-DD-comic-ep01",
+  "type": "create.comic.episode",
+  "title": "에피소드 제목",
+  "date": "YYYY-MM-DD",
+  "tags": [
+    "comic",
+    "scroll"
+  ],
+  "visibility": "private",
+  "summary": "에피소드 한 줄 요약(선택)",
+  "seriesId": "series-id(선택)",
+  "episodeNo": 1,
+  "format": "scroll",
+  "images": [
+    {
+      "src": "assets/comic/ep01/001.jpg",
+      "alt": "컷 1"
+    },
+    {
+      "src": "assets/comic/ep01/002.jpg",
+      "alt": "컷 2"
+    }
+  ],
+  "bodyMd": "## 제작 메모(선택)\n- ...\n"
+}

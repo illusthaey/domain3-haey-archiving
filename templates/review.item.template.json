@@ -1,0 +1,15 @@
+{
+  "id": "YYYY-MM-DD-review-sample",
+  "type": "review.movie",
+  "title": "작품 감상 제목",
+  "date": "YYYY-MM-DD",
+  "tags": [
+    "review"
+  ],
+  "visibility": "private",
+  "summary": "한 줄 요약(선택)",
+  "medium": "movie",
+  "rating": 4,
+  "spoiler": false,
+  "bodyMd": "## 좋았던 점\n- ...\n"
+}

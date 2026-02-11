@@ -1,0 +1,12 @@
+{
+  "siteTitle": "개인 아카이브",
+  "indexes": [
+    "data/devlog/index.json",
+    "data/create/comic/index.json",
+    "data/create/illustration/index.json",
+    "data/create/writing/index.json",
+    "data/create/memo/index.json",
+    "data/review/index.json",
+    "data/work/index.json"
+  ]
+}

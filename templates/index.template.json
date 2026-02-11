@@ -1,0 +1,23 @@
+{
+  "_comment": "섹션/카테고리별 목록 파일. entries는 '가벼운 메타 + src'만 둔다.",
+  "section": "devlog",
+  "title": "개발 일지 & 코드 공부",
+  "short": "개발",
+  "listPage": "devlog/",
+  "updated": "YYYY-MM-DD",
+  "entries": [
+    {
+      "id": "YYYY-MM-DD-some-id",
+      "type": "devlog.log",
+      "title": "제목",
+      "date": "YYYY-MM-DD",
+      "tags": [
+        "tag1",
+        "tag2"
+      ],
+      "visibility": "private",
+      "summary": "한 줄 요약(선택)",
+      "src": "data/devlog/items/YYYY-MM-DD-some-id.json"
+    }
+  ]
+}

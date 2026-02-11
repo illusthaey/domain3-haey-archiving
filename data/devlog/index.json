@@ -1,0 +1,23 @@
+{
+  "section": "devlog",
+  "title": "개발 일지 & 코드 공부",
+  "short": "개발",
+  "listPage": "devlog/",
+  "updated": "2026-02-05",
+  "entries": [
+    {
+      "id": "2026-02-05-archive-scaffold",
+      "type": "devlog.log",
+      "title": "정적(JSON) 아카이브 스캐폴딩 만들기",
+      "date": "2026-02-05",
+      "tags": [
+        "static",
+        "json",
+        "vanilla-js"
+      ],
+      "visibility": "private",
+      "summary": "탭 없는 UI + index.json / items/*.json 구조로 시작.",
+      "src": "data/devlog/items/2026-02-05-archive-scaffold.json"
+    }
+  ]
+}

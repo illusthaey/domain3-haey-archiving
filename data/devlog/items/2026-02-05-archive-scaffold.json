@@ -1,0 +1,20 @@
+{
+  "id": "2026-02-05-archive-scaffold",
+  "type": "devlog.log",
+  "title": "정적(JSON) 아카이브 스캐폴딩 만들기",
+  "date": "2026-02-05",
+  "tags": [
+    "static",
+    "json",
+    "vanilla-js"
+  ],
+  "visibility": "private",
+  "summary": "탭 없는 UI + index.json / items/*.json 구조로 시작.",
+  "bodyMd": "## 목표\n- 정적 페이지에서 JSON으로 데이터만 관리\n- 상단 탭/메뉴 난잡함 없이, **목록 + 상세**만\n\n## 결정한 구조\n1. `/data/{섹션}/index.json` : 목록(가벼운 메타)\n2. `/data/{섹션}/items/{id}.json` : 상세(본문/이미지 등)\n\n## 스니펫\n```js\n// 목록 -> 상세로 링크\nconst href = `view.html?src=${encodeURIComponent(entry.src)}`;\n```\n\n--- \n다음 단계: 내 손에 맞는 필드만 남기고, 나머지는 과감히 삭제하기.\n",
+  "links": [
+    {
+      "title": "fetch() MDN",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+    }
+  ]
+}

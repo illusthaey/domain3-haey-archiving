@@ -1,0 +1,15 @@
+{
+  "id": "YYYY-MM-DD-devlog-sample",
+  "type": "devlog.note",
+  "title": "개발/공부 메모 제목",
+  "date": "YYYY-MM-DD",
+  "tags": [
+    "js",
+    "css",
+    "idea"
+  ],
+  "visibility": "private",
+  "summary": "오늘 배운 것 한 줄",
+  "bodyMd": "## 개념\n- ...\n\n## 코드\n```js\nconsole.log('hi')\n```\n",
+  "links": []
+}

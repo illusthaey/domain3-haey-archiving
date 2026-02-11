@@ -1,0 +1,26 @@
+{
+  "id": "2026-02-01-a7-memo-01",
+  "type": "create.memo.card",
+  "title": "A7 메모 백업(샘플)",
+  "date": "2026-02-01",
+  "tags": [
+    "memo",
+    "a7",
+    "idea"
+  ],
+  "visibility": "private",
+  "summary": "그날그날 메모는 이미지로만 백업해도 80점.",
+  "images": [
+    {
+      "src": "assets/media/placeholder-square.svg",
+      "alt": "A7 메모(placeholder)"
+    }
+  ],
+  "bodyMd": "## 규칙(최소)\n- 파일명: `YYYY-MM-DD_memo_001.jpg`\n- 폴더: `assets/memos/YYYY/MM/DD/`\n\n## 연결(선택)\n메모가 어떤 작품/에피소드로 이어졌는지 `related[]`에 붙여두면 나중에 진짜 재밌어짐.\n",
+  "related": [
+    {
+      "label": "샘플 에피소드 1화",
+      "src": "data/create/comic/items/2026-02-02-sample-episode-01.json"
+    }
+  ]
+}

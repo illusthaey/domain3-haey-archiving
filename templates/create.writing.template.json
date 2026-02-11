@@ -1,0 +1,14 @@
+{
+  "id": "YYYY-MM-DD-writing-sample",
+  "type": "create.writing.essay",
+  "title": "글 제목",
+  "date": "YYYY-MM-DD",
+  "tags": [
+    "essay"
+  ],
+  "visibility": "private",
+  "summary": "요약(선택)",
+  "tone": "담담",
+  "theme": "창작",
+  "bodyMd": "## 본문\n...\n"
+}

@@ -1,0 +1,8 @@
+{
+  "name": "archiving-site-starter",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "rebuild-index": "node tools/rebuild-index.mjs"
+  }
+}

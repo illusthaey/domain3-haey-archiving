@@ -1,0 +1,34 @@
+{
+  "id": "2026-02-02-sample-episode-01",
+  "type": "create.comic.episode",
+  "title": "샘플 에피소드 1화",
+  "date": "2026-02-02",
+  "tags": [
+    "comic",
+    "scroll",
+    "sample"
+  ],
+  "visibility": "private",
+  "summary": "스크롤형 이미지 배열로 에피소드 구성 예시.",
+  "seriesId": "sample-series",
+  "episodeNo": 1,
+  "format": "scroll",
+  "images": [
+    {
+      "src": "assets/media/placeholder-wide.svg",
+      "alt": "컷 1",
+      "caption": "PLACEHOLDER 1"
+    },
+    {
+      "src": "assets/media/placeholder-wide.svg",
+      "alt": "컷 2",
+      "caption": "PLACEHOLDER 2"
+    },
+    {
+      "src": "assets/media/placeholder-wide.svg",
+      "alt": "컷 3",
+      "caption": "PLACEHOLDER 3"
+    }
+  ],
+  "bodyMd": "## 메모\n- 이 JSON은 **에피소드 1개**를 의미\n- `images[]` 순서가 그대로 표시 순서\n\n### 포맷 값 예시\n- `page`\n- `square`\n- `scroll`\n"
+}

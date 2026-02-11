@@ -1,0 +1,23 @@
+{
+  "section": "work",
+  "title": "업무 공부 & 업무일지",
+  "short": "업무",
+  "listPage": "work/",
+  "updated": "2026-02-05",
+  "entries": [
+    {
+      "id": "2026-01-30-sample-work-kb",
+      "type": "work.kb",
+      "title": "샘플 업무 지식: 처리 절차 템플릿",
+      "date": "2026-01-30",
+      "tags": [
+        "work",
+        "kb",
+        "process"
+      ],
+      "visibility": "private",
+      "summary": "업무 지식은 '근거/절차/함정' 3요소만 있어도 충분히 강해짐.",
+      "src": "data/work/items/2026-01-30-sample-work-kb.json"
+    }
+  ]
+}

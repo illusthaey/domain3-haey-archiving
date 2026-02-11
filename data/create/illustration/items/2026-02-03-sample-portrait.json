@@ -1,0 +1,23 @@
+{
+  "id": "2026-02-03-sample-portrait",
+  "type": "create.illustration.portrait",
+  "title": "샘플 초상화(placeholder)",
+  "date": "2026-02-03",
+  "tags": [
+    "illustration",
+    "portrait"
+  ],
+  "visibility": "private",
+  "summary": "일러스트 1장 = 1레코드. 이미지 클릭하면 확대 모달.",
+  "category": "portrait",
+  "tools": [
+    "digital"
+  ],
+  "images": [
+    {
+      "src": "assets/media/placeholder-portrait.svg",
+      "alt": "샘플 초상화"
+    }
+  ],
+  "bodyMd": "## 메모\n- 초상화, 캐릭터, 반려동물, 풍경 등은 `type`/`category`로 구분\n- `images[]`에 원본/리사이즈/과정샷을 같이 넣어도 됨\n"
+}

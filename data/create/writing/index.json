@@ -1,0 +1,22 @@
+{
+  "section": "create.writing",
+  "title": "글",
+  "short": "글",
+  "listPage": "create/writing/",
+  "updated": "2026-02-05",
+  "entries": [
+    {
+      "id": "2026-02-04-sample-essay",
+      "type": "create.writing.essay",
+      "title": "샘플 에세이: 꾸준함은 설계다",
+      "date": "2026-02-04",
+      "tags": [
+        "essay",
+        "writing"
+      ],
+      "visibility": "private",
+      "summary": "글은 Markdown으로 본문 관리. (옵시디언 느낌 그대로)",
+      "src": "data/create/writing/items/2026-02-04-sample-essay.json"
+    }
+  ]
+}

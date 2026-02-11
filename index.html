@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="site-base" content="./" />
+  <title>개인 아카이브</title>
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body data-page="home">
+  <header class="site-header">
+    <div class="shell">
+      <div class="row between">
+        <div><strong>개인 아카이브</strong></div>
+        <div class="muted">정적페이지 · JSON 데이터</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>개인 아카이브</h1>
+    <p class="subtitle">상단 탭 없이, 필요한 페이지만 조용히 쌓아가는 아카이빙.</p>
+
+    <section class="section">
+      <h2 class="local-h2 local-tight"><a class="link" href="devlog/">1. 개발 일지 & 코드 공부</a></h2>
+      <p class="muted">개발 로그, 학습 노트, 스니펫, 프로젝트 메모</p>
+    </section>
+
+    <section class="section">
+      <h2 class="local-h2 local-tight"><a class="link" href="create/">2. 창작물</a></h2>
+      <p class="muted">만화 · 일러스트 · 글 · 창작 메모(A7)</p>
+    </section>
+
+    <section class="section">
+      <h2 class="local-h2 local-tight"><a class="link" href="review/">3. 컨텐츠 감상</a></h2>
+      <p class="muted">책/영화/드라마/웹툰/게임… 보고 느낀 것 정리</p>
+    </section>
+
+    <section class="section">
+      <h2 class="local-h2 local-tight"><a class="link" href="work/">4. 업무 공부 & 업무일지</a></h2>
+      <p class="muted">업무 지식(KB), 케이스 기록, 템플릿, 업무 로그</p>
+    </section>
+
+    <section class="section">
+      <h2 class="local-h2 local-tight">최근 업데이트</h2>
+      <p class="muted">모든 분류에서 최근 12개를 자동으로 모아서 보여줌</p>
+      <div id="recent-list"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="shell">
+      <p>© 개인 아카이브 · static + json</p>
+      <p class="muted">file://로 직접 열면 JSON fetch가 막힙니다. README의 로컬 서버로 실행하세요.</p>
+    </div>
+  </footer>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

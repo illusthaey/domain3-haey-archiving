@@ -1,0 +1,16 @@
+{
+  "id": "2026-01-31-sample-review",
+  "type": "review.book",
+  "title": "샘플 감상: 어떤 책을 읽고",
+  "date": "2026-01-31",
+  "tags": [
+    "review",
+    "book"
+  ],
+  "visibility": "private",
+  "summary": "감상은 '재미 포인트'를 구조화해두면 나중에 내 취향 분석이 된다.",
+  "medium": "book",
+  "rating": 4,
+  "spoiler": false,
+  "bodyMd": "## 좋았던 점\n- 문장이 간결해서 속도가 붙는다\n- 결론을 강요하지 않고 여백을 준다\n\n## 남는 질문\n- 이 이야기는 **누구의** 이야기였나?\n- 내가 가장 오래 붙잡은 문장은 왜 그랬나?\n"
+}

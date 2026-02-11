@@ -1,0 +1,23 @@
+{
+  "section": "create.comic",
+  "title": "만화",
+  "short": "만화",
+  "listPage": "create/comic/",
+  "updated": "2026-02-05",
+  "entries": [
+    {
+      "id": "2026-02-02-sample-episode-01",
+      "type": "create.comic.episode",
+      "title": "샘플 에피소드 1화",
+      "date": "2026-02-02",
+      "tags": [
+        "comic",
+        "scroll",
+        "sample"
+      ],
+      "visibility": "private",
+      "summary": "스크롤형 이미지 배열로 에피소드 구성 예시.",
+      "src": "data/create/comic/items/2026-02-02-sample-episode-01.json"
+    }
+  ]
+}

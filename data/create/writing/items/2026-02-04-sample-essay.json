@@ -1,0 +1,15 @@
+{
+  "id": "2026-02-04-sample-essay",
+  "type": "create.writing.essay",
+  "title": "샘플 에세이: 꾸준함은 설계다",
+  "date": "2026-02-04",
+  "tags": [
+    "essay",
+    "writing"
+  ],
+  "visibility": "private",
+  "summary": "글은 Markdown으로 본문 관리. (옵시디언 느낌 그대로)",
+  "tone": "담담",
+  "theme": "창작",
+  "bodyMd": "## 한 문장\n꾸준함은 의지라기보다 **구조**다.\n\n### 체크리스트\n- [ ] 너무 거창한 목표 세우지 않기\n- [ ] 오늘 할 수 있는 만큼만\n- [ ] 기록은 남겨서, 내일의 나에게 힌트 주기\n\n--- \n마지막으로: 내 아카이브는 미래의 나에게 주는 설명서.\n"
+}

@@ -1,0 +1,22 @@
+{
+  "id": "YYYY-MM-DD-illust-sample",
+  "type": "create.illustration.portrait",
+  "title": "일러스트 제목",
+  "date": "YYYY-MM-DD",
+  "tags": [
+    "portrait"
+  ],
+  "visibility": "private",
+  "summary": "한 줄 요약(선택)",
+  "category": "portrait",
+  "tools": [
+    "procreate"
+  ],
+  "images": [
+    {
+      "src": "assets/illustration/xxx.png",
+      "alt": "대표 이미지"
+    }
+  ],
+  "bodyMd": "## 메모\n- ...\n"
+}

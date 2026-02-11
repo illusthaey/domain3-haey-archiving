@@ -1,0 +1,15 @@
+{
+  "id": "YYYY-MM-DD-work-kb",
+  "type": "work.kb",
+  "title": "업무 지식 제목",
+  "date": "YYYY-MM-DD",
+  "tags": [
+    "work",
+    "kb"
+  ],
+  "visibility": "private",
+  "summary": "요약(선택)",
+  "topic": "예산",
+  "bodyMd": "## 근거\n- ...\n\n## 절차\n1. ...\n",
+  "links": []
+}
