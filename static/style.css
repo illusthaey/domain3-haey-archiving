@@ -1,4 +1,4 @@
-/* 2026.2.25.(수) 오전 3:40 버튼 색상 팔레트 추가*/
+/* 2026.3.5.(목) 오전 7:40 버튼 색상 팔레트 추가*/
 
 * {
   box-sizing: border-box;
@@ -1302,5 +1302,547 @@ html[data-theme="retro"] .site-footer .btn.btn-theme.is-active{
 @media (max-width: 640px){
   html[data-theme="retro"] body{
     background-attachment: scroll;
+  }
+}
+
+
+/* ✅ retro 모드: 섹션 카드(.section) 배경만 순백으로 */
+html[data-theme="retro"] .section{
+  background: #fff;
+}
+
+
+/* =========================================================
+   아카이빙 사이트 스킨 보강 (2026.3.17)
+   - 기존 style.css를 유지한 채, 아카이빙 전용 클래스 보강
+   - retro 테마를 '포켓몬스터 골드풍의 차분한 휴대용 게임 UI' 방향으로 재정의
+   - footer.js의 html[data-theme="retro"] 토글과 바로 호환
+   ========================================================= */
+
+/* -------------------------------
+   1) 아카이빙 사이트가 실제로 쓰는 공통 클래스
+   ------------------------------- */
+
+.hidden {
+  display: none !important;
+}
+
+.site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 1.05rem;
+  line-height: 1;
+  color: #111;
+}
+
+.card-link {
+  display: block;
+  transition:
+    transform 0.14s ease,
+    background-color 0.14s ease,
+    border-color 0.14s ease,
+    box-shadow 0.14s ease;
+}
+
+.card-link:hover {
+  background: #f3f4f6;
+}
+
+.tags {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-size: 0.9rem;
+  line-height: 1.2;
+  color: #555;
+  padding: 5px 10px;
+  border-radius: 999px;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+}
+
+.meta-line {
+  margin: 8px 0 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.prose {
+  margin-top: 10px;
+}
+
+.prose > :first-child {
+  margin-top: 0;
+}
+
+.prose > :last-child {
+  margin-bottom: 0;
+}
+
+.prose a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.prose code,
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  font-size: 0.94rem;
+}
+
+.prose :not(pre) > code,
+code:not(pre code) {
+  padding: 0.14em 0.42em;
+  border-radius: 6px;
+  background: rgba(17, 24, 39, 0.06);
+}
+
+pre {
+  margin: 12px 0;
+  padding: 14px 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fff;
+  overflow-x: auto;
+}
+
+pre code {
+  display: block;
+  background: transparent;
+  padding: 0;
+}
+
+/* 목록/상세 페이지에서 제목 바로 아래 여백을 조금 더 단정하게 */
+.section > h1:first-child,
+.section > h2:first-child,
+.section > h3:first-child,
+.card > h2:first-child,
+.card > h3:first-child {
+  margin-top: 0;
+}
+
+/* -------------------------------
+   2) Retro Gold Theme
+   - 복붙한 포켓몬 UI 재현이 아니라,
+     '금빛 카트리지 + 휴대용 게임 메뉴창' 분위기의 해석 버전
+   ------------------------------- */
+
+html[data-theme="retro"] {
+  color-scheme: light;
+}
+
+html[data-theme="retro"] body,
+body.theme-retro {
+  --gold-bg-top: #d7cd9e;
+  --gold-bg-bottom: #c9bc82;
+  --gold-panel: #f6efd0;
+  --gold-panel-2: #ebe0b4;
+  --gold-panel-3: #e0d29b;
+  --gold-ink: #2f2918;
+  --gold-ink-soft: #5f5739;
+  --gold-line: #625733;
+  --gold-line-soft: #8b7d4d;
+  --gold-shadow: rgba(78, 68, 38, 0.26);
+  --gold-shadow-strong: rgba(78, 68, 38, 0.42);
+  --gold-glow: rgba(255, 250, 224, 0.72);
+  --gold-focus: rgba(118, 125, 82, 0.45);
+  --gold-accent: #8b7440;
+  --gold-accent-2: #707750;
+  --gold-accent-soft: rgba(139, 116, 64, 0.12);
+
+  background:
+    radial-gradient(circle at 50% -10%, rgba(255, 252, 234, 0.52), transparent 32%),
+    radial-gradient(circle at 0% 20%, rgba(255, 245, 201, 0.22), transparent 34%),
+    radial-gradient(circle at 100% 0%, rgba(120, 124, 81, 0.10), transparent 36%),
+    repeating-linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.05) 0 2px,
+      rgba(74, 65, 38, 0.02) 2px 4px
+    ),
+    linear-gradient(180deg, var(--gold-bg-top) 0%, var(--gold-bg-bottom) 100%);
+  color: var(--gold-ink);
+  background-attachment: fixed;
+}
+
+html[data-theme="retro"] body,
+html[data-theme="retro"] body p,
+html[data-theme="retro"] body li,
+html[data-theme="retro"] body div,
+html[data-theme="retro"] body span,
+body.theme-retro,
+body.theme-retro p,
+body.theme-retro li,
+body.theme-retro div,
+body.theme-retro span {
+  color: var(--gold-ink);
+}
+
+html[data-theme="retro"] body .muted,
+html[data-theme="retro"] body .sub,
+html[data-theme="retro"] body .subtitle,
+html[data-theme="retro"] body .meta-line,
+html[data-theme="retro"] body .note,
+body.theme-retro .muted,
+body.theme-retro .sub,
+body.theme-retro .subtitle,
+body.theme-retro .meta-line,
+body.theme-retro .note {
+  color: var(--gold-ink-soft);
+}
+
+html[data-theme="retro"] body h1,
+html[data-theme="retro"] body h2,
+html[data-theme="retro"] body h3,
+html[data-theme="retro"] body h4,
+html[data-theme="retro"] body .btn,
+html[data-theme="retro"] body .chip,
+html[data-theme="retro"] body .tag,
+html[data-theme="retro"] body summary,
+html[data-theme="retro"] body th,
+body.theme-retro h1,
+body.theme-retro h2,
+body.theme-retro h3,
+body.theme-retro h4,
+body.theme-retro .btn,
+body.theme-retro .chip,
+body.theme-retro .tag,
+body.theme-retro summary,
+body.theme-retro th {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", "Apple SD Gothic Neo", "Noto Sans KR",
+    "맑은 고딕", monospace;
+  letter-spacing: -0.02em;
+}
+
+html[data-theme="retro"] body h1,
+html[data-theme="retro"] body h2,
+body.theme-retro h1,
+body.theme-retro h2 {
+  color: var(--gold-ink);
+  text-shadow: 1px 1px 0 rgba(255, 249, 223, 0.65);
+}
+
+html[data-theme="retro"] .site-header,
+body.theme-retro .site-header {
+  background:
+    linear-gradient(180deg, rgba(255, 252, 237, 0.92), rgba(228, 216, 164, 0.96));
+  border-bottom: 2px solid var(--gold-line);
+  box-shadow: 0 3px 0 rgba(98, 87, 51, 0.24);
+}
+
+html[data-theme="retro"] .site-footer,
+body.theme-retro .site-footer {
+  background:
+    linear-gradient(180deg, rgba(246, 239, 208, 0.96), rgba(231, 221, 177, 0.96));
+  border-top: 2px solid var(--gold-line);
+  color: var(--gold-ink-soft);
+}
+
+html[data-theme="retro"] .site-title,
+body.theme-retro .site-title {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: 2px solid var(--gold-line);
+  background:
+    linear-gradient(180deg, rgba(255, 250, 231, 0.98), rgba(235, 224, 180, 0.98));
+  color: var(--gold-ink);
+  box-shadow:
+    inset 1px 1px 0 var(--gold-glow),
+    inset -1px -1px 0 rgba(98, 87, 51, 0.12),
+    3px 3px 0 var(--gold-shadow);
+}
+
+html[data-theme="retro"] .section,
+html[data-theme="retro"] .card,
+html[data-theme="retro"] .tool-card,
+html[data-theme="retro"] .callout,
+html[data-theme="retro"] .shot-details,
+html[data-theme="retro"] .dl-shot,
+body.theme-retro .section,
+body.theme-retro .card,
+body.theme-retro .tool-card,
+body.theme-retro .callout,
+body.theme-retro .shot-details,
+body.theme-retro .dl-shot {
+  background:
+    linear-gradient(180deg, rgba(255, 253, 240, 0.96), rgba(240, 231, 193, 0.96));
+  border: 2px solid var(--gold-line);
+  border-radius: 10px;
+  box-shadow:
+    inset 1px 1px 0 var(--gold-glow),
+    inset -1px -1px 0 rgba(98, 87, 51, 0.10),
+    4px 4px 0 var(--gold-shadow);
+}
+
+html[data-theme="retro"] .card-link:hover,
+body.theme-retro .card-link:hover {
+  background:
+    linear-gradient(180deg, rgba(255, 250, 231, 0.98), rgba(233, 223, 176, 0.98));
+  border-color: var(--gold-line);
+  transform: translate(-1px, -1px);
+  box-shadow:
+    inset 1px 1px 0 var(--gold-glow),
+    inset -1px -1px 0 rgba(98, 87, 51, 0.12),
+    5px 5px 0 var(--gold-shadow-strong);
+}
+
+html[data-theme="retro"] .btn,
+body.theme-retro .btn {
+  border: 2px solid var(--gold-line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(255, 251, 235, 0.98), rgba(233, 223, 178, 0.98));
+  color: var(--gold-ink);
+  box-shadow:
+    inset 1px 1px 0 var(--gold-glow),
+    inset -1px -1px 0 rgba(98, 87, 51, 0.10),
+    3px 3px 0 var(--gold-shadow);
+  transition:
+    transform 0.08s ease,
+    box-shadow 0.08s ease,
+    background-color 0.16s ease,
+    filter 0.16s ease;
+}
+
+html[data-theme="retro"] .btn:hover,
+body.theme-retro .btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow:
+    inset 1px 1px 0 var(--gold-glow),
+    inset -1px -1px 0 rgba(98, 87, 51, 0.10),
+    4px 4px 0 var(--gold-shadow-strong);
+  background:
+    linear-gradient(180deg, rgba(255, 252, 237, 1), rgba(238, 229, 188, 1));
+}
+
+html[data-theme="retro"] .btn:active,
+body.theme-retro .btn:active {
+  transform: translate(1px, 1px);
+  box-shadow:
+    inset 1px 1px 0 rgba(255, 248, 219, 0.72),
+    inset -1px -1px 0 rgba(98, 87, 51, 0.14),
+    1px 1px 0 var(--gold-shadow);
+}
+
+html[data-theme="retro"] .btn.primary,
+body.theme-retro .btn.primary,
+html[data-theme="retro"] .site-footer .btn.btn-theme.is-active,
+body.theme-retro .site-footer .btn.btn-theme.is-active {
+  background:
+    linear-gradient(180deg, #7b734f, #645c3a);
+  color: #f8f1d1;
+  border-color: #4d4528;
+}
+
+html[data-theme="retro"] .btn.ghost,
+body.theme-retro .btn.ghost {
+  background:
+    linear-gradient(180deg, rgba(247, 241, 213, 0.96), rgba(229, 219, 173, 0.96));
+  border-color: var(--gold-line-soft);
+}
+
+html[data-theme="retro"] .chip,
+body.theme-retro .chip,
+html[data-theme="retro"] .tag,
+body.theme-retro .tag {
+  border: 2px solid var(--gold-line);
+  background:
+    linear-gradient(180deg, rgba(255, 250, 233, 0.96), rgba(233, 223, 178, 0.96));
+  color: var(--gold-ink);
+  box-shadow:
+    inset 1px 1px 0 var(--gold-glow),
+    2px 2px 0 rgba(78, 68, 38, 0.18);
+}
+
+html[data-theme="retro"] .chip:hover,
+body.theme-retro .chip:hover {
+  background:
+    linear-gradient(180deg, rgba(255, 252, 237, 1), rgba(238, 229, 188, 1));
+}
+
+html[data-theme="retro"] .chip.is-active,
+html[data-theme="retro"] .chip[aria-current="location"],
+body.theme-retro .chip.is-active,
+body.theme-retro .chip[aria-current="location"] {
+  background:
+    linear-gradient(180deg, rgba(227, 229, 198, 0.98), rgba(201, 204, 160, 0.98));
+  border-color: var(--gold-line);
+}
+
+html[data-theme="retro"] .chip.is-active::after,
+html[data-theme="retro"] .chip[aria-current="location"]::after,
+body.theme-retro .chip.is-active::after,
+body.theme-retro .chip[aria-current="location"]::after {
+  content: "◆";
+  font-size: 0.72em;
+  margin-left: 6px;
+  color: var(--gold-accent);
+}
+
+html[data-theme="retro"] input[type="text"],
+html[data-theme="retro"] input[type="number"],
+html[data-theme="retro"] input[type="time"],
+html[data-theme="retro"] input[type="date"],
+html[data-theme="retro"] select,
+html[data-theme="retro"] textarea,
+body.theme-retro input[type="text"],
+body.theme-retro input[type="number"],
+body.theme-retro input[type="time"],
+body.theme-retro input[type="date"],
+body.theme-retro select,
+body.theme-retro textarea {
+  border: 2px solid var(--gold-line);
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, rgba(242, 245, 223, 0.96), rgba(225, 230, 198, 0.96));
+  color: #30331f;
+  box-shadow: inset 2px 2px 0 rgba(98, 87, 51, 0.08);
+}
+
+html[data-theme="retro"] input:focus,
+html[data-theme="retro"] select:focus,
+html[data-theme="retro"] textarea:focus,
+body.theme-retro input:focus,
+body.theme-retro select:focus,
+body.theme-retro textarea:focus {
+  outline: 3px solid var(--gold-focus);
+  outline-offset: 2px;
+  border-color: var(--gold-line);
+  box-shadow:
+    inset 2px 2px 0 rgba(98, 87, 51, 0.08),
+    0 0 0 2px rgba(255, 251, 231, 0.42);
+}
+
+html[data-theme="retro"] hr,
+body.theme-retro hr {
+  border: 0;
+  border-top: 2px dashed rgba(98, 87, 51, 0.42);
+  opacity: 1;
+}
+
+html[data-theme="retro"] .sheetlike,
+body.theme-retro .sheetlike {
+  background: rgba(255, 250, 232, 0.88);
+}
+
+html[data-theme="retro"] .sheetlike th,
+html[data-theme="retro"] .sheetlike td,
+body.theme-retro .sheetlike th,
+body.theme-retro .sheetlike td {
+  border-color: rgba(98, 87, 51, 0.36);
+}
+
+html[data-theme="retro"] .sheetlike th,
+body.theme-retro .sheetlike th {
+  background: rgba(216, 205, 158, 0.60);
+  color: var(--gold-ink);
+}
+
+html[data-theme="retro"] pre,
+body.theme-retro pre {
+  border: 2px solid var(--gold-line);
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, rgba(58, 53, 33, 0.98), rgba(45, 41, 24, 0.98));
+  color: #f5edc8;
+  box-shadow:
+    inset 1px 1px 0 rgba(255, 248, 219, 0.06),
+    4px 4px 0 rgba(78, 68, 38, 0.24);
+}
+
+html[data-theme="retro"] .prose :not(pre) > code,
+html[data-theme="retro"] code:not(pre code),
+body.theme-retro .prose :not(pre) > code,
+body.theme-retro code:not(pre code) {
+  background: rgba(98, 87, 51, 0.12);
+  color: var(--gold-ink);
+}
+
+html[data-theme="retro"] .prose a,
+body.theme-retro .prose a,
+html[data-theme="retro"] .card a,
+body.theme-retro .card a {
+  color: #5b5d33;
+  text-decoration-color: rgba(91, 93, 51, 0.45);
+}
+
+html[data-theme="retro"] .prose a:hover,
+body.theme-retro .prose a:hover,
+html[data-theme="retro"] .card a:hover,
+body.theme-retro .card a:hover {
+  color: #413b20;
+  text-decoration-color: rgba(65, 59, 32, 0.72);
+}
+
+html[data-theme="retro"] .tool-thumb,
+html[data-theme="retro"] .dl-shot img,
+body.theme-retro .tool-thumb,
+body.theme-retro .dl-shot img {
+  border: 2px solid rgba(98, 87, 51, 0.30);
+  background: #fff8df;
+}
+
+html[data-theme="retro"] .img-modal-content,
+body.theme-retro .img-modal-content {
+  background: #fff7dc;
+  border: 2px solid var(--gold-line);
+}
+
+html[data-theme="retro"] .back-to-top-fab .btn,
+body.theme-retro .back-to-top-fab .btn {
+  border-radius: 999px;
+}
+
+html[data-theme="retro"] .local-accent,
+body.theme-retro .local-accent,
+html[data-theme="retro"] .accent,
+body.theme-retro .accent {
+  color: #5d6036 !important;
+}
+
+html[data-theme="retro"] .badge-rose,
+body.theme-retro .badge-rose {
+  background: rgba(139, 116, 64, 0.18);
+  color: #5f4d26;
+  border: 1px solid rgba(98, 87, 51, 0.22);
+}
+
+/* 스크롤바까지 너무 번쩍거리면 레트로가 아니라 놀이공원이라서 살짝만 */
+html[data-theme="retro"] * {
+  scrollbar-color: rgba(98, 87, 51, 0.56) rgba(255, 249, 226, 0.72);
+}
+
+/* 모바일에서는 fixed 배경이 버벅일 수 있어 스크롤로 조정 */
+@media (max-width: 640px) {
+  html[data-theme="retro"] body,
+  body.theme-retro {
+    background-attachment: scroll;
+  }
+
+  html[data-theme="retro"] .section,
+  html[data-theme="retro"] .card,
+  html[data-theme="retro"] .tool-card,
+  html[data-theme="retro"] .callout,
+  html[data-theme="retro"] .shot-details,
+  html[data-theme="retro"] .dl-shot,
+  body.theme-retro .section,
+  body.theme-retro .card,
+  body.theme-retro .tool-card,
+  body.theme-retro .callout,
+  body.theme-retro .shot-details,
+  body.theme-retro .dl-shot {
+    box-shadow:
+      inset 1px 1px 0 var(--gold-glow),
+      inset -1px -1px 0 rgba(98, 87, 51, 0.08),
+      3px 3px 0 var(--gold-shadow);
   }
 }
